@@ -18,7 +18,7 @@ export const Chat = (props) => {
 
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState('');
-  const ENDPOINT = 'localhost:5000';
+  const ENDPOINT = 'https://react-node-chat-app-real-time.herokuapp.com/';
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
